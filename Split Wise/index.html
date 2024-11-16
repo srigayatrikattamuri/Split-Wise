@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splitwise Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Splitwise Expense Tracker</h1>
+    
+    
+    <div class="expense-form">
+      <label for="payer">Payer:</label>
+      <input type="text" id="payer" placeholder="Who paid?">
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" min="0">
+
+      <label for="participants">Participants (comma-separated):</label>
+      <input type="text" id="participants" placeholder="Enter participants">
+
+      <button id="addExpenseBtn">Add Expense</button>
+    </div>
+
+   
+    <div class="expense-list">
+      <h2>Expenses</h2>
+      <ul id="expenses"></ul>
+    </div>
+
+   
+    <div class="results">
+      <h2>Balance Sheet</h2>
+      <ul id="balances"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
